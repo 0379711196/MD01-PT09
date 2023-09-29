@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thuc hanh 05</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 600px;
+        margin: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas:
+          "header header"
+          "content1 content3"
+          "content1 content4"
+          "content1 footer"
+          "content2 footer";
+      }
+      .item-1 {
+        background-image: url(https://i.pinimg.com/474x/9a/92/a9/9a92a9ed78335659d34150fc85f09e73.jpg);
+        border: 1px solid grey;
+        grid-area: header;
+        height: 100px;
+      }
+      .item-2 {
+        background-image: url(https://i.pinimg.com/474x/6f/ec/81/6fec81e34bad0669ee66f27f627a1bb5.jpg);
+        border: 1px solid grey;
+        grid-area: content1;
+      }
+      .item-3 {
+        background-image: url(https://i.pinimg.com/474x/12/a8/a5/12a8a5ce4f26321efbb9a1b0bfac3082.jpg);
+        border: 1px solid grey;
+        grid-area: content2;
+      }
+      .item-4 {
+        background-image: url(https://i.pinimg.com/474x/e4/2d/11/e42d115052b8a7cc564070c568b4d924.jpg);
+        border: 1px solid grey;
+        grid-area: content3;
+      }
+      .item-5 {
+        background-image: url(https://i.pinimg.com/474x/63/06/a8/6306a86f7386393fcb9bb02f483a915d.jpg);
+        border: 1px solid grey;
+        grid-area: content4;
+      }
+      .item-6 {
+        background-image: url(https://i.pinimg.com/474x/ea/ff/fb/eafffb6919281cbafdd63b50b0933866.jpg);
+        border: 1px solid grey;
+        grid-area: footer;
+      }
+      h2,
+      p {
+        padding: 5px;
+        color: white;
+      }
+      button {
+        background-color: white;
+        width: 200px;
+        height: 20px;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        margin-top: 120px;
+        margin-left: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item-1">
+        <h2>We like balloons</h2>
+        <p>You can find all kinds balloon relaced things here.</p>
+      </div>
+
+      <div class="item-2">
+        <h2>Spacial Shapes</h2>
+        <p>Why are some of them so scary looking?</p>
+      </div>
+
+      <div class="item-3">
+        <h2>10 things you discover when taking a balloonride.</h2>
+        <p>Number 8 will AMAZE you.</p>
+      </div>
+
+      <div class="item-4">
+        <h2>Angry people at balloon fiestas</h2>
+        <p>Hot air balloons. A bit weather sensitive.</p>
+      </div>
+
+      <div class="item-5">
+        <h2>Balloon photos</h2>
+        <p>I have quite a few.</p>
+      </div>
+
+      <div class="item-6">
+        <p>Sign up for more information about balloons.</p>
+        <button>Sign me up!</button>
+      </div>
+    </div>
+  </body>
+</html>

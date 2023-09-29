@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thuc hanh 02</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        border: 1px solid grey;
+        width: 600px;
+        height: 178px;
+      }
+      .header {
+        display: flex;
+        flex-direction: row;
+        background-color: blue;
+        height: 40px;
+        justify-content: space-between;
+        padding: 5px;
+      }
+      h2 {
+        color: white;
+      }
+      .header button:nth-child(2) {
+        border: none;
+        border-radius: 5px;
+        padding: 5px;
+      }
+      .content {
+        display: flex;
+        flex-direction: row;
+      }
+      .content {
+        padding: 5px;
+      }
+      input {
+        border: none;
+        border-bottom: 1px solid grey;
+        width: 450px;
+      }
+      .content button:nth-child(3) {
+        background-color: blue;
+        color: white;
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+      }
+      .footer {
+        background-color: lightgray;
+        height: 70px;
+        margin-top: 20px;
+      }
+      .footer p {
+        background-color: grey;
+        text-align: center;
+        margin-top: 10px;
+        height: 40px;
+        padding: 10px;
+      }
+      h3 {
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Task List</h2>
+        <button>Share</button>
+      </div>
+      <div class="content">
+        <p>New Task:</p>
+        <input type="text" />
+        <button>Add Task</button>
+      </div>
+      <div class="footer">
+        <h3>Shared Task List</h3>
+        <p>&copy;2023 Task List</p>
+      </div>
+    </div>
+  </body>
+</html>
