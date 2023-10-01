@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Web 02</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .content-1 img {
+        padding-top: 40px;
+        padding-left: 300px;
+      }
+      .item {
+        border: 1px solid grey;
+        background-color: white;
+        width: 400px;
+        height: 250px;
+        position: absolute;
+        z-index: 2;
+        left: 650px;
+        top: 70px;
+        padding: 10px;
+      }
+      img {
+        position: relative;
+        z-index: 1;
+      }
+      i {
+        color: yellow;
+        font-size: 30px;
+      }
+      .item p {
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+      .item button {
+        width: 100px;
+        height: 30px;
+        text-align: center;
+        color: white;
+        background-color: burlywood;
+        border: none;
+      }
+      .content-2 {
+        background-color: black;
+        height: 450px;
+        margin-top: 50px;
+      }
+      .content-2 h2 {
+        color: white;
+        text-align: center;
+        padding: 50px;
+      }
+      .list-card {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .card {
+        border: 1px solid white;
+        background-color: white;
+        width: 300px;
+        height: 300px;
+        position: relative;
+      }
+      .card img {
+        position: absolute;
+        left: 130px;
+        top: 20px;
+      }
+      .item-1 {
+        margin-top: 100px;
+        text-align: center;
+      }
+      .item-1 p {
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+      .item-1 button {
+        width: 100px;
+        height: 30px;
+        background-color: burlywood;
+        color: white;
+        text-align: center;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content-1">
+        <img
+          src="images/about-img.jpg"
+          alt="no image"
+          width="700px"
+          height="350px"
+        />
+
+        <div class="item">
+          <h2>WHO ARE WE?</h2>
+          <i class="fa-solid fa-window-minimize"></i>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique,
+            sunt commodi nulla veniam itaque distinctio esse architecto nisi
+            aliquam sint, consectetur quae magnam eaque excepturi fugiat
+            praesentium. Rerum accusantium molestias, vel eum explicabo qui
+          </p>
+          <button>READ MORE</button>
+        </div>
+      </div>
+      <div class="content-2">
+        <h2>OUR SERVICES</h2>
+        <div class="list-card">
+          <div class="card">
+            <img
+              src="images/s1.svg"
+              alt="no image"
+              width="50px"
+              height="60px"
+            />
+            <div class="item-1">
+              <h3>HOME SECURITY</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
+                voluptatem deserunt cumque iure omnis illum possimus incidunt,
+                reprehenderit, facilis quas sed quisquam laudantium nesciunt
+                rem.
+              </p>
+              <button>Read More</button>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="images/s2.svg"
+              alt="no image"
+              width="50px"
+              height="60px"
+            />
+            <div class="item-1">
+              <h3>HOME SECURITY</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
+                voluptatem deserunt cumque iure omnis illum possimus incidunt,
+                reprehenderit, facilis quas sed quisquam laudantium nesciunt
+                rem.
+              </p>
+              <button>Read More</button>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="images/s3.svg"
+              alt="no image"
+              width="50px"
+              height="60px"
+            />
+            <div class="item-1">
+              <h3>HOME SECURITY</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
+                voluptatem deserunt cumque iure omnis illum possimus incidunt,
+                reprehenderit, facilis quas sed quisquam laudantium nesciunt
+                rem.
+              </p>
+              <button>Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
